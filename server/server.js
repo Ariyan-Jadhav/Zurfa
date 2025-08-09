@@ -20,8 +20,6 @@ app.use("/api/ai", userRouter);
 
 const PORT = process.env.PORT || 3000;
 
-// Bind to 0.0.0.0 so other devices on the network can access
-app.listen(PORT, "0.0.0.0", () => {
-  console.log(`Server is running at http://0.0.0.0:${PORT}`);
-  console.log(`Access it from your network via: http://10.40.6.89:${PORT}`);
+app.listen(PORT, () => {
+  console.log(`server is running at port ${PORT}`);
 });
