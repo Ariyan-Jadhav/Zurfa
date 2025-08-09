@@ -1,5 +1,5 @@
 import React from "react";
-import TestimonialCard from "../components/card";
+import TestimonialCard from "../components/Card";
 import { NavLink } from "react-router-dom";
 import {
   useClerk,
