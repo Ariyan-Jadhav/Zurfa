@@ -39,7 +39,7 @@ const CodeOpt = () => {
 
   return (
     <div className="flex flex-col sm:flex-row bg-[#FAF0E6] min-h-screen d-font">
-      <div className="flex justify-center sm:justify-start items-center flex-col sm:w-[80%]">
+      <div className="flex justify-center sm:justify-start items-center flex-col sm:w-[50%]">
         <div className="object-cover w-[70%] sm:w-[60%] sm:ml-7">
           <img src="/code.png" />
         </div>
@@ -64,7 +64,7 @@ const CodeOpt = () => {
           </button>
         </div>
       </div>
-      <div className="w-full md:w-3/5 flex items-center justify-center">
+      <div className="w-[90%] md:w-3/5 flex items-center justify-center">
         <div className="xl:w-3/4 w-[95%] max-w-full overflow-auto text-white text-sm rounded-2xl sm:rounded-none my-5 p-5 h-[500px] bg-[#000] font-mono box-border break-words whitespace-pre-wrap">
           {!loading && content && (
             <div className="prose max-w-none">
