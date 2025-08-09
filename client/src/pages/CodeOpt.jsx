@@ -65,7 +65,7 @@ const CodeOpt = () => {
         </div>
       </div>
       <div className="w-[90%] md:w-3/5 flex items-center justify-center">
-        <div className="xl:w-3/4 w-[95%] max-w-full overflow-auto text-white text-sm rounded-2xl sm:rounded-none my-5 p-5 h-[500px] bg-[#000] font-mono box-border break-words whitespace-pre-wrap">
+        <div className=" w-[95%] max-w-full overflow-scroll text-white text-sm rounded-2xl sm:rounded-none my-5 p-5 h-[500px] bg-[#000] font-mono box-border break-words whitespace-pre-wrap">
           {!loading && content && (
             <div className="prose max-w-none">
               <Markdown>{content}</Markdown>
