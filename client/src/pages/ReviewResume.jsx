@@ -42,17 +42,17 @@ function ReviewResume() {
   };
 
   return (
-    <div className="flex flex-col xl:flex-row bg-[rgb(250,240,230)] min-h-screen d-font">
-      <div className="flex justify-center xl:justify-start items-center flex-col xl:w-[80%] mt-4 ">
-        <div className="object-cover w-[70%] xl:w-[60%] xl:ml-7">
+    <div className="flex flex-col lg:flex-row bg-[rgb(250,240,230)] min-h-screen d-font">
+      <div className="flex justify-center lg:justify-start items-center flex-col lg:w-[80%] mt-4 ">
+        <div className="object-cover w-[70%] lg:w-[60%] lg:ml-7">
           <img src="/resume.png" />
         </div>
         <form
           onSubmit={onSubmitHandler}
-          className="w-[90%] flex flex-col xl:gap-14 rounded-2xl py-4 xl:w-[80%] bg-[rgb(255,255,255,0.7)] xl:flex-row gap-4 justify-center items-center"
+          className="w-[100%] flex flex-col lg:gap-14 rounded-2xl py-4 px-[60px] lg:w-[80%] bg-[rgb(255,255,255,0.7)] lg:flex-row gap-4 justify-center items-center"
         >
           <label htmlFor="file-upload">
-            <div className=" h-[90px] hover:border-blue-400 font-mono hover:bg-[rgb(0,0,0,0.1)] border-blue-600 flex flex-col gap-1 justify-center items-center w-[150px]  ease-in-out xl:w-[200px] border-dotted border-2 rounded-md text-blue-700">
+            <div className=" h-[90px] hover:border-blue-400 font-mono hover:bg-[rgb(0,0,0,0.1)] border-blue-600 flex flex-col gap-1 justify-center items-center w-[150px]  ease-in-out lg:w-[200px] border-dotted border-2 rounded-md text-blue-700">
               <h1>Upload PDF</h1>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -133,7 +133,7 @@ function ReviewResume() {
         </form>
       </div>
       <div className="w-full flex justify-center">
-        <div className="xl:w-[70%] overflow-scroll xl:rounded-none text-sm w-[95%] rounded-2xl  xl:mr-9 my-5 p-5 h-[500px] bg-[#9AA6B2] xl:flex xl:justify-center mb-5 font-mono">
+        <div className="lg:w-[70%] overflow-scroll lg:rounded-none text-sm w-[95%] rounded-2xl  lg:mr-9 my-5 p-5 h-[500px] bg-[#9AA6B2] lg:flex lg:justify-center mb-5 font-mono">
           {!loading && content && (
             <div className="reset-tw">
               <Markdown>{content}</Markdown>

@@ -50,15 +50,15 @@ const BlogTitle = () => {
   };
 
   return (
-    <div className="flex flex-col sm:flex-row bg-[#FAF0E6] min-h-screen d-font">
-      <div className="flex justify-center sm:justify-start items-center flex-col sm:w-[80%] mt-4">
-        <div className="object-cover w-[70%] sm:w-[60%] sm:ml-7">
+    <div className="flex flex-col lg:flex-row bg-[#FAF0E6] min-h-screen d-font">
+      <div className="flex justify-center lg:justify-start items-center flex-col lg:w-[80%] mt-4">
+        <div className="object-cover w-[70%] lg:w-[60%] lg:ml-7">
           <img src="/title.png" />
         </div>
         <div className=" grid grid-cols-4 text-[11px] text-amber-50 gap-2 font-bold">
           <button
             onClick={() => setCategory(categoryList[0])}
-            className={`bg-[rgb(58,109,140)] hover:bg-[rgb(58,109,140,0.8)] px-2 py-[2px] rounded-full border-2 focus:outline-none sm:text-[12px] transition-all
+            className={`bg-[rgb(58,109,140)] hover:bg-[rgb(58,109,140,0.8)] px-2 py-[2px] rounded-full border-2 focus:outline-none lg:text-[12px] transition-all
           ${
             category === categoryList[0]
               ? "border-black text-black"
@@ -69,7 +69,7 @@ const BlogTitle = () => {
           </button>
           <button
             onClick={() => setCategory(categoryList[1])}
-            className={`bg-[rgb(58,109,140)] hover:bg-[rgb(58,109,140,0.8)] px-2 py-[2px] rounded-full border-2 focus:outline-none sm:text-[12px] transition-all
+            className={`bg-[rgb(58,109,140)] hover:bg-[rgb(58,109,140,0.8)] px-2 py-[2px] rounded-full border-2 focus:outline-none lg:text-[12px] transition-all
           ${
             category === categoryList[1]
               ? "border-black text-black"
@@ -80,7 +80,7 @@ const BlogTitle = () => {
           </button>
           <button
             onClick={() => setCategory(categoryList[2])}
-            className={`bg-[rgb(58,109,140)] hover:bg-[rgb(58,109,140,0.8)] px-2 py-[2px] rounded-full border-2 focus:outline-none sm:text-[12px] transition-all
+            className={`bg-[rgb(58,109,140)] hover:bg-[rgb(58,109,140,0.8)] px-2 py-[2px] rounded-full border-2 focus:outline-none lg:text-[12px] transition-all
           ${
             category === categoryList[2]
               ? "border-black text-black"
@@ -91,7 +91,7 @@ const BlogTitle = () => {
           </button>
           <button
             onClick={() => setCategory(categoryList[3])}
-            className={`bg-[rgb(58,109,140)] hover:bg-[rgb(58,109,140,0.8)] px-2 py-[2px] rounded-full border-2 focus:outline-none sm:text-[12px] transition-all
+            className={`bg-[rgb(58,109,140)] hover:bg-[rgb(58,109,140,0.8)] px-2 py-[2px] rounded-full border-2 focus:outline-none lg:text-[12px] transition-all
           ${
             category === categoryList[3]
               ? "border-black text-black"
@@ -102,7 +102,7 @@ const BlogTitle = () => {
           </button>
           <button
             onClick={() => setCategory(categoryList[4])}
-            className={`bg-[rgb(58,109,140)] hover:bg-[rgb(58,109,140,0.8)] px-2 py-[2px] rounded-full border-2 focus:outline-none sm:text-[12px] transition-all
+            className={`bg-[rgb(58,109,140)] hover:bg-[rgb(58,109,140,0.8)] px-2 py-[2px] rounded-full border-2 focus:outline-none lg:text-[12px] transition-all
           ${
             category === categoryList[4]
               ? "border-black text-black"
@@ -113,7 +113,7 @@ const BlogTitle = () => {
           </button>
           <button
             onClick={() => setCategory(categoryList[5])}
-            className={`bg-[rgb(58,109,140)] hover:bg-[rgb(58,109,140,0.8)] px-2 py-[2px] rounded-full border-2 focus:outline-none sm:text-[12px] transition-all
+            className={`bg-[rgb(58,109,140)] hover:bg-[rgb(58,109,140,0.8)] px-2 py-[2px] rounded-full border-2 focus:outline-none lg:text-[12px] transition-all
           ${
             category === categoryList[5]
               ? "border-black text-black"
@@ -124,7 +124,7 @@ const BlogTitle = () => {
           </button>
           <button
             onClick={() => setCategory(categoryList[6])}
-            className={`bg-[rgb(58,109,140)] hover:bg-[rgb(58,109,140,0.8)] px-2 py-[2px] rounded-full border-2 focus:outline-none sm:text-[12px] transition-all
+            className={`bg-[rgb(58,109,140)] hover:bg-[rgb(58,109,140,0.8)] px-2 py-[2px] rounded-full border-2 focus:outline-none lg:text-[12px] transition-all
           ${
             category === categoryList[6]
               ? "border-black text-black"
@@ -135,7 +135,7 @@ const BlogTitle = () => {
           </button>
           <button
             onClick={() => setCategory(categoryList[7])}
-            className={`bg-[rgb(58,109,140)] hover:bg-[rgb(58,109,140,0.8)] px-2 py-[2px] rounded-full border-2 focus:outline-none sm:text-[12px] transition-all
+            className={`bg-[rgb(58,109,140)] hover:bg-[rgb(58,109,140,0.8)] px-2 py-[2px] rounded-full border-2 focus:outline-none lg:text-[12px] transition-all
           ${
             category === categoryList[7]
               ? "border-black text-black"
@@ -166,16 +166,16 @@ const BlogTitle = () => {
           </button>
         </form>
       </div>
-      <div className="w-full flex justify-center">
-        <div className="xl:w-[70%] overflow-scroll xl:rounded-none text-sm w-[95%] rounded-2xl  xl:mr-9 my-5 p-5 h-[500px] bg-[#9AA6B2] xl:flex xl:justify-center mb-5 font-mono">
+      <div className="w-full flex items-center justify-center">
+        <div className="xl:w-[70%] w-[95%] max-w-full overflow-scroll text-white text-sm rounded-2xl lg:rounded-none my-5 p-5 h-[500px] bg-[#000] font-mono box-border break-words whitespace-pre-wrap">
           {!loading && content && (
-            <div className="reset-tw">
+            <div className="prose max-w-none">
               <Markdown>{content}</Markdown>
             </div>
           )}
           {loading && (
             <div className="flex justify-center items-center w-full h-full">
-              <div className="code-loader"></div>
+              <div className="code-loader" />
             </div>
           )}
         </div>

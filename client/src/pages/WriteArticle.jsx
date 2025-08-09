@@ -44,15 +44,15 @@ function WriteArticle() {
   };
 
   return (
-    <div className="flex flex-col sm:flex-row bg-[#FAF0E6] min-h-screen d-font">
-      <div className="flex justify-center sm:justify-start items-center flex-col sm:w-[80%] mt-4">
-        <div className="object-cover w-[70%] sm:w-[60%] sm:ml-7">
+    <div className="flex flex-col lg:flex-row bg-[#FAF0E6] min-h-screen d-font">
+      <div className="flex justify-center lg:justify-start items-center flex-col lg:w-[80%] mt-4">
+        <div className="object-cover w-[70%] lg:w-[60%] lg:ml-7">
           <img src="/article.png" />
         </div>
         <div className="flex justify-around text-[9px] gap-2 font-bold text-white">
           <button
             onClick={() => setSelectedLength(articleLength[0].length)}
-            className={`bg-[rgb(58,109,140)] hover:bg-[rgb(58,109,140,0.8)] px-2 py-[2px] rounded-full border-2 focus:outline-none sm:text-[12px] transition-all
+            className={`bg-[rgb(58,109,140)] hover:bg-[rgb(58,109,140,0.8)] px-2 py-[2px] rounded-full border-2 focus:outline-none lg:text-[12px] transition-all
           ${
             selectedLength === articleLength[0].length
               ? "border-black text-black"
@@ -63,7 +63,7 @@ function WriteArticle() {
           </button>
           <button
             onClick={() => setSelectedLength(articleLength[1].length)}
-            className={`bg-[rgb(58,109,140)] hover:bg-[rgb(58,109,140,0.8)] px-2 py-[2px] rounded-full border-2 focus:outline-none sm:text-[12px] transition-all
+            className={`bg-[rgb(58,109,140)] hover:bg-[rgb(58,109,140,0.8)] px-2 py-[2px] rounded-full border-2 focus:outline-none lg:text-[12px] transition-all
           ${
             selectedLength === articleLength[1].length
               ? "border-black text-black"
@@ -74,7 +74,7 @@ function WriteArticle() {
           </button>
           <button
             onClick={() => setSelectedLength(articleLength[2].length)}
-            className={`bg-[rgb(58,109,140)] hover:bg-[rgb(58,109,140,0.8)] px-2 py-[2px] rounded-full border-2 focus:outline-none sm:text-[12px] transition-all
+            className={`bg-[rgb(58,109,140)] hover:bg-[rgb(58,109,140,0.8)] px-2 py-[2px] rounded-full border-2 focus:outline-none lg:text-[12px] transition-all
           ${
             selectedLength === articleLength[2].length
               ? "border-black text-black"

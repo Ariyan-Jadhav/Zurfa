@@ -38,9 +38,9 @@ const CodeOpt = () => {
   };
 
   return (
-    <div className="flex flex-col sm:flex-row bg-[#FAF0E6] min-h-screen d-font">
-      <div className="flex justify-center sm:justify-start items-center flex-col sm:w-[50%]">
-        <div className="object-cover w-[70%] sm:w-[60%] sm:ml-7">
+    <div className="flex flex-col lg:flex-row bg-[#FAF0E6] min-h-screen d-font">
+      <div className="flex justify-center lg:justify-start items-center flex-col lg:w-[80%]">
+        <div className="object-cover w-[70%] lg:w-[60%] lg:ml-7">
           <img src="/code.png" />
         </div>
         <div className="w-full flex flex-col justify-center items-center">
@@ -51,7 +51,7 @@ const CodeOpt = () => {
             className="px-4 py-2 w-[80%] h-32 rounded-xl border-2 border-gray-300 font-bold
              focus:outline-none focus:ring-2 focus:ring-purple-500
              hover:border-purple-400
-             transition-all duration-300 shadow-sm
+             transition-all duration-300 shadow-lg
              hover:shadow-md placeholder-gray-400
              resize-none"
           />
@@ -64,8 +64,8 @@ const CodeOpt = () => {
           </button>
         </div>
       </div>
-      <div className="w-[90%] md:w-3/5 flex items-center justify-center">
-        <div className=" w-[95%] max-w-full overflow-scroll text-white text-sm rounded-2xl sm:rounded-none my-5 p-5 h-[500px] bg-[#000] font-mono box-border break-words whitespace-pre-wrap">
+      <div className="sm:min-w-[55%] flex items-center justify-center">
+        <div className="xl:w-[70%] w-[95%] max-w-full overflow-scroll text-white text-sm rounded-2xl lg:rounded-none my-5 p-5 h-[500px] bg-[#000] font-mono box-border break-words whitespace-pre-wrap">
           {!loading && content && (
             <div className="prose max-w-none">
               <Markdown>{content}</Markdown>
