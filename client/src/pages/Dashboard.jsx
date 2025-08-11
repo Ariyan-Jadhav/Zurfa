@@ -73,7 +73,28 @@ function Dashboard() {
           Back to Home
         </NavLink>
       </div>
-
+      <div className="flex justify-center">
+        <div className="flex w-full text-[12px] justify-around items-center h-[30px] mb-4 bg-[rgb(0,0,0,0.1)] rounded-4xl sm:w-[50%]">
+          <NavLink
+            className="text-white h-full w-full flex justify-center items-center hover:bg-[rgb(0,0,0,0.5)] focus:bg-[rgb(0,0,0,0.5)] rounded-l-4xl"
+            to="/ai/generate-images"
+          >
+            Pixel Flex
+          </NavLink>
+          <NavLink
+            className="text-white h-full w-full flex justify-center items-center hover:bg-[rgb(0,0,0,0.5)] focus:bg-[rgb(0,0,0,0.5)]"
+            to="/ai/code"
+          >
+            Loop Daddy
+          </NavLink>
+          <NavLink
+            className="text-white h-full w-full flex justify-center items-center hover:bg-[rgb(0,0,0,0.5)] focus:bg-[rgb(0,0,0,0.5)] rounded-r-4xl"
+            to="/ai/write-article"
+          >
+            Type Lord
+          </NavLink>
+        </div>
+      </div>
       <div className=" sm:flex sm:justify-around gap-2">
         <div className="font-mono flex justify-around sm:justify-center sm:gap-9 w-full sm:w-[70%] items-center">
           <div className=" flex shadow-2xl justify-around items-center flex-col h-[145px] w-[135px] rounded-3xl bg-gradient-to-br from-fuchsia-400 via-sky-200 to-teal-700 hover:from-indigo-200 hover:via-cyan-300 hover:to-emerald-400 transition-colors duration-500">

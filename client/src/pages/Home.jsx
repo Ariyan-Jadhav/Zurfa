@@ -47,7 +47,7 @@ const Home = () => {
           </div>
         </div>
         <div className="text-white h-[179px] sm:h-[250px] font-bold pt-[100px] text-[22px] sm:text-[50px] text-center ">
-          <p className="">Where creativity meets clarity</p>
+          <p className="">Where Creativity Meets Clarity</p>
           <p>- with ZURFA</p>
         </div>
         <div className="text-center text-gray-300 text-sm sm:text-md flex justify-center">

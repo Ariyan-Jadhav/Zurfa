@@ -20,7 +20,7 @@ function Layout() {
       });
     } else {
       t1.to(".sidebar", {
-        height: "200px", // Expanded height
+        height: "185px", // Expanded height
         ease: "power2.inOut",
         duration: 1,
       });
@@ -30,7 +30,7 @@ function Layout() {
   useEffect(() => {
     if (isLoaded && !isSignedIn) {
       navigate("/");
-      toast("Sign-in");
+      toast("Sign-in Required!");
     }
   }, [isLoaded, isSignedIn, navigate]);
 
@@ -99,8 +99,8 @@ function Layout() {
               )}
             </div>
           </div>
-          <div className="flex justify-around">
-            <div className="flex flex-col gap-2.5">
+          <div className="flex justify-around text-sm">
+            <div className="flex flex-col gap-2.5 ">
               <NavLink
                 className={
                   "rounded-md px-3 py-0.5 font-bold  text-black   bg-gradient-to-br from-[rgb(250,218,122)] via-yellow-300 to-orange-300 hover:from-orange-400 hover:via-yellow-400 hover:to-amber-500 focus:bg-[#F0A04B] transition-colors duration-500 ease-in-out "
