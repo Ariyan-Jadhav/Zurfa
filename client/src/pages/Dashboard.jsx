@@ -150,9 +150,8 @@ function Dashboard() {
           </NavLink>
           <div className="w-[73%] flex justify-center items-center p-0.5">
             <h1 className="">
-              The database has limits, just like your ex's patience. So don't
-              spam it like a 5-year-old discovering the refresh button. Save
-              some for the rest of us, aight?
+              The database has usage limits, so please avoid excessive requests
+              let’s keep things smooth for everyone.
             </h1>
           </div>
         </div>

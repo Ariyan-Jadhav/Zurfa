@@ -166,16 +166,16 @@ const BlogTitle = () => {
           </button>
         </form>
       </div>
-      <div className="w-full flex items-center justify-center">
-        <div className="xl:w-[70%] w-[95%] max-w-full overflow-scroll text-white text-sm rounded-2xl lg:rounded-none my-5 p-5 h-[500px] bg-[#000] font-mono box-border break-words whitespace-pre-wrap">
+      <div className="w-full flex justify-center">
+        <div className="xl:w-[70%] overflow-scroll xl:rounded-none text-sm w-[95%] rounded-2xl  xl:mr-9 my-5 p-5 h-[500px] bg-[#9AA6B2] xl:flex xl:justify-center mb-5 font-mono">
           {!loading && content && (
-            <div className="prose max-w-none">
+            <div className="reset-tw">
               <Markdown>{content}</Markdown>
             </div>
           )}
           {loading && (
             <div className="flex justify-center items-center w-full h-full">
-              <div className="code-loader" />
+              <div className="code-loader"></div>
             </div>
           )}
         </div>

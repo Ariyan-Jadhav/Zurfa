@@ -17,7 +17,7 @@ const CodeOpt = () => {
     e.preventDefault();
     try {
       setLoading(true);
-      const prompt = `Write a clean, efficient, and optimized code implementation for the following prompt: "${input}". 
+      const prompt = `Write a clean, efficient, and optimized code implementation for the following prompt: "${input}".
       The code should be simple, well-structured, and follow best practices. Do not include any extra explanations, summaries, or markdown syntax — only the raw code. if the prompt is empty or irrelevent then display // 404: Prompt not found.
 // Please insert brain and try again. `;
       const { data } = await axios.post(
@@ -38,17 +38,23 @@ const CodeOpt = () => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row bg-[#FAF0E6] min-h-screen d-font">
-      <div className="flex justify-center lg:justify-start items-center flex-col lg:w-[80%]">
-        <div className="object-cover w-[70%] lg:w-[60%] lg:ml-7">
-          <img src="/code.png" />
+    <div className="flex flex-col lg:flex-row bg-[#FAF0E6] min-h-screen d-font gap-4 p-4">
+      {/* Left Panel - Input Section */}
+      <div className="flex flex-col lg:w-1/2 xl:w-2/5">
+        {/* Image Container */}
+        <div className="flex justify-center items-center mb-6">
+          <div className="w-full max-w-md lg:max-w-lg">
+            <img src="/code.png" className="w-full h-auto object-contain" />
+          </div>
         </div>
-        <div className="w-full flex flex-col justify-center items-center">
+
+        {/* Input Section */}
+        <div className="flex flex-col items-center space-y-4 px-4">
           <textarea
             value={input}
             placeholder="Enter your prompt..."
             onChange={(e) => setInput(e.target.value)}
-            className="px-4 py-2 w-[80%] h-32 rounded-xl border-2 border-gray-300 font-bold
+            className="px-4 py-2 w-full max-w-lg h-32 rounded-xl border-2 border-gray-300 font-bold
              focus:outline-none focus:ring-2 focus:ring-purple-500
              hover:border-purple-400
              transition-all duration-300 shadow-lg
@@ -58,24 +64,28 @@ const CodeOpt = () => {
 
           <button
             onClick={onSubmitHandler}
-            className="w-[130px] mt-3 rounded-2xl border-2 border-dashed border-black bg-white px-6 py-1 font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
+            className="w-[130px] rounded-2xl border-2 border-dashed border-black bg-white px-6 py-1 font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
           >
             Submit
           </button>
         </div>
       </div>
-      <div className="sm:min-w-[55%] flex items-center justify-center">
-        <div className="xl:w-[70%] w-[95%] max-w-full overflow-scroll text-white text-sm rounded-2xl lg:rounded-none my-5 p-5 h-[500px] bg-[#000] font-mono box-border break-words whitespace-pre-wrap">
-          {!loading && content && (
-            <div className="prose max-w-none">
-              <Markdown>{content}</Markdown>
-            </div>
-          )}
-          {loading && (
-            <div className="flex justify-center items-center w-full h-full">
-              <div className="code-loader" />
-            </div>
-          )}
+
+      {/* Right Panel - Output Section */}
+      <div className="flex-1 lg:w-1/2 xl:w-3/5 flex items-stretch">
+        <div className="w-full flex items-center justify-center">
+          <div className="w-full max-w-full h-[500px] lg:h-[600px] xl:h-[700px] text-white text-sm rounded-2xl p-5 bg-[#000] font-mono overflow-scroll break-words whitespace-pre-wrap">
+            {!loading && content && (
+              <div className="prose max-w-none">
+                <Markdown>{content}</Markdown>
+              </div>
+            )}
+            {loading && (
+              <div className="flex justify-center items-center w-full h-full">
+                <div className="code-loader" />
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </div>
